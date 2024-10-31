@@ -25,7 +25,7 @@ const RestaurantPage = () => {
       {/* Main Content */}
       <div className="flex-1 lg:mr-[320px]">
         {/* Hero Image */}
-        <div className="relative h-[200px] md:h-[300px] lg:h-[400px] w-full">
+        <div className="relative h-[190px] md:h-[300px] lg:h-[400px] w-full">
           <img
             src={banner}
             alt="Kebab meat on wooden board"
