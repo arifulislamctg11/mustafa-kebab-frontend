@@ -21,11 +21,11 @@ const RestaurantPage = () => {
   const [deliveryType, setDeliveryType] = useState("delivery");
   
   return (
-    <div className="flex min-h-screen bg-white mt-4 rounded-md">
+    <div className="flex min-h-screen bg-white rounded-md">
       {/* Main Content */}
       <div className="flex-1 lg:mr-[320px]">
         {/* Hero Image */}
-        <div className="relative h-[200px] md:h-[300px] lg:h-[400px] w-full">
+        <div className="relative h-[200px] md:h-[300px] lg:h-[500px] w-full">
           <img
             src={banner}
             alt="Kebab meat on wooden board"
@@ -111,7 +111,7 @@ const RestaurantPage = () => {
       </div>
 
       {/* Fixed Basket for larger screens */}
-      <div className="hidden lg:block w-[320px] bg-white border-l border-gray-200 h-screen absolute right-0">
+      <div className="hidden lg:block w-[320px] bg-white border-l border-gray-200 h-screen fixed right-0">
         <div className="p-6">
           <h2 className="text-xl text-center font-bold mb-4">Basket</h2>
 
