@@ -12,6 +12,13 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoLanguageOutline } from "react-icons/io5";
 import { LuBadgePercent } from "react-icons/lu";
 const Modal = () => {
+  const openModal = () => {
+    document.getElementById("my_modal_3").showModal();
+  };
+
+  const closeModal = () => {
+    document.getElementById("my_modal_3").close();
+  };
   return (
     <>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
@@ -34,9 +41,11 @@ const Modal = () => {
             <button className="text-black bg-slate-200  px-10 md:px-16 py-1 rounded-full">
               Sign in
             </button>
+            {/* signin  */}
             <button className="text-white bg-orange-600 px-4 md:px-8 py-1 rounded-full">
               Create account
             </button>
+            {/* create acount */}
           </div>
           {/* menu bar */}
           <div className="mt-7 ">
