@@ -5,7 +5,7 @@ import CardSection from "../../components/CardSection/CardSection";
 const Home = () => {
     return (
         <div>
-            <section></section>
+           
             <Banner/>
             <CardSection></CardSection>
             
