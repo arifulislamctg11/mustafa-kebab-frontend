@@ -41,7 +41,7 @@ const Navabr = () => {
   </div>
   <div className="navbar-center  lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className="text-black font-semibold">Menu</li>
+      <li className="text-black font-semibold hidden md:flex">Menu</li>
       
     </ul>
   </div>

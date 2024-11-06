@@ -108,9 +108,9 @@ const RestaurantPage = () => {
         </main>
 
         {/* Desktop Basket Sidebar */}
-        <aside className="hidden lg:block w-[320px] bg-white border-l border-gray-200 h-screen fixed right-0 overflow-y-auto">
-          <div className="p-6">
-            <BasketContent />
+        <aside className="hidden lg:block w-[320px] bg-white z-[50] border-l border-gray-200 h-screen fixed right-0 overflow-y-auto ">
+          <div className="p-6 ">
+            <BasketContent  />
           </div>
         </aside>
 
