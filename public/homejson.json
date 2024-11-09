@@ -60,7 +60,7 @@
         ]
       },
       {
-        "category": "Plate Kebab",
+        "category": "Kebab rollowany",
         "items": [
           {
             "id": 201,
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "category": "Kebab Set",
+        "category": "Kebab w bułce",
         "items": [
           {
             "id": 301,
@@ -182,7 +182,7 @@
         ]
       } ,
       {
-        "category": "Popular",
+        "category": "Talerz Kebab zestaw",
         "items": [
           {
             "id": 7,
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "category": "Kabab ",
+        "category": "Kebab Box",
         "items": [
           {
             "id": 9,
@@ -303,7 +303,7 @@
         ]
       },
       {
-        "category": "Soup",
+        "category": "Chicken nuggets",
         "items": [
           {
             "id": 11,

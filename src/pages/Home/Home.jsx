@@ -1,13 +1,14 @@
-import Banner from "../../components/Banner/Banner";
-import CardSection from "../../components/CardSection/CardSection";
+
+import Basket from "../../components/Banner/Basket";
+
+import Secation from "../../components/Secation/Secation";
 
 
 const Home = () => {
     return (
-        <div>
-           
-            <Banner/>
-            <CardSection></CardSection>
+        <div className="flex  flex-1">
+           <Secation></Secation>
+            <Basket></Basket>
             
         </div>
     );
