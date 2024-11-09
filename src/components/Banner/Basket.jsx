@@ -48,7 +48,7 @@ const Basket = () => {
       </div>
 
       {/* Toggle between Delivery and Pickup content (only visible on larger devices) */}
-      <div className="hidden sm:block flex flex-col items-center justify-center mt-4">
+      <div className="hidden sm:block lg:flex flex-col items-center justify-center mt-4">
         {selectedOption === 'delivery' ? (
           <>
             <h3 className="text-xl font-semibold mb-2">Delivery Option Selected</h3>
