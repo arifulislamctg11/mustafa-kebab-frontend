@@ -28,11 +28,9 @@ const MenuModal = ({ closeModal, isOpen }) => {
     const handleSignInClick = () => {
         setActiveComponent('SignIn');
     };
-
     const handleSignUpClick = () => {
         setActiveComponent('SignUp');
     };
-
     const handlePreviousClick = () => {
         setActiveComponent('initial');
     };
@@ -64,34 +62,36 @@ const MenuModal = ({ closeModal, isOpen }) => {
                             leaveTo='opacity-0 scale-95'
                         >
                             <DialogPanel className='w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all'>
-                             
+
 
                                 <DialogTitle as='h3' className='text-lg font-medium text-center leading-6 text-gray-900'>
-                                {activeComponent !== 'initial' && (
-                                    <button
-                                        onClick={handlePreviousClick}
-                                        className="text-gray-500 underline absolute top-6 left-3 text-3xl hover:bg-gray-100 p-1 rounded-md"
-                                    >
-                                     <GrPrevious/>
-                                    </button>
-                                )}
+                                    {activeComponent !== 'initial' && (
+                                        <button
+                                            onClick={handlePreviousClick}
+                                            className="text-gray-500 underline absolute top-6 left-3 text-3xl hover:bg-gray-100 p-1 rounded-md"
+                                        >
+                                            <GrPrevious />
+                                        </button>
+                                    )}
                                     <h3 className="font-bold text-xl text-black">My account</h3>
 
-                                    <div className="text-xl font-semibold flex justify-between mt-5">
-                                        
+
+                                    <div className="text-xl font-semibold flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 lg:gap-8 mt-5">
                                         <button
                                             onClick={handleSignInClick}
-                                            className={`px-10 md:px-16 py-1 rounded-full ${activeComponent === 'SignIn' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
+                                            className={`w-full sm:w-auto py-2  sm:px-8 sm:py-2 md:px-10 md:py-2  rounded-full ${activeComponent === 'SignIn' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
                                         >
                                             Sign in
                                         </button>
                                         <button
                                             onClick={handleSignUpClick}
-                                            className={`px-4 md:px-8 py-1 rounded-full ${activeComponent === 'SignUp' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
+                                            className={`w-full sm:w-auto  py-2 sm:px-8 sm:py-2 md:px-10 md:py-2  rounded-full ${activeComponent === 'SignUp' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
                                         >
                                             Create account
                                         </button>
                                     </div>
+
+
                                 </DialogTitle>
 
                                 <div className="mt-7">
@@ -112,19 +112,14 @@ const MenuModal = ({ closeModal, isOpen }) => {
                                                 </NavLink>
                                             </li>
                                             <div className="divider"></div>
-                                            <li>
-                                                <NavLink className="flex gap-5 text-black ">
-                                                    <CiGift className="text-2xl mt-1" />
-                                                    <span className="text-xl">Punkty</span>
-                                                </NavLink>
-                                            </li>
+
                                             <li>
                                                 <NavLink className="flex gap-5 text-black ">
                                                     <LuBadgePercent className="text-2xl mt-1" />
                                                     <span className="text-xl">StampCards</span>
                                                 </NavLink>
                                             </li>
-                                        
+
                                         </ul>
                                     )}
                                 </div>

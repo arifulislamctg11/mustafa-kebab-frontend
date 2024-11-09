@@ -24,20 +24,20 @@ const SignIn = () => {
   };
 
   return (
-    <div className='flex justify-center items-center '>
+    <div className='flex justify-center items-center  '>
       <div className='flex flex-col max-w-md rounded-md text-gray-900'>
   
      
         <div
           disabled={loading}
           onClick={handleGoogle}
-          className='flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 cursor-pointer '
+          className='flex justify-center items-center space-x-2 border m-3 p-2 border-gray-300 cursor-pointer  rounded-xl'
         >
           <FcGoogle size={32} />
           <p>Continue with Google</p>
         </div>
         <form className='space-y-6'>
-          <div className='space-y-4'>
+          <div className=''>
             <div>
               <label htmlFor='email' className='block mb-2 text-sm'>Email address</label>
               <input
@@ -46,7 +46,7 @@ const SignIn = () => {
                 id='email'
                 required
                 placeholder='Enter Your Email Here'
-                className='w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-orange-500 bg-gray-200 text-gray-900'
+                className='w-full px-3 py-2 border rounded-xl border-gray-300 focus:outline-orange-500 bg-gray-200 text-gray-900'
               />
             </div>
             <div className='relative'>
@@ -80,10 +80,7 @@ const SignIn = () => {
           </div>
         </form>
         
-        <p className='text-sm text-center text-gray-400'>
-          Don&apos;t have an account yet?{' '}
-          <Link to='/signup' className='hover:underline hover:text-orange-500 text-gray-600'>Registration</Link>.
-        </p>
+    
       </div>
     </div>
   );
