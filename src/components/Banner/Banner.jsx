@@ -1,4 +1,3 @@
-import React from 'react';
 import { Info, Heart } from 'lucide-react';
 import Basket from './Basket';
 import banner from '../../assets/banner.jpg';
