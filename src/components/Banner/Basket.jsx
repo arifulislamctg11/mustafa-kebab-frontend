@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { ShoppingBasket, Truck, MapPin } from 'lucide-react';
 
 const Basket = () => {
