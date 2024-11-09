@@ -9,7 +9,7 @@ const Basket = () => {
   };
 
   return (
-    <div className="w-[350px] p-4 bg-white rounded-lg">
+    <div className="w-[350px] fixed hidden lg:block p-4 right-0 bg-white rounded-lg">
       {/* Heading for small and medium devices */}
       <h2 className="hidden lg:flex justify-center text-xl font-bold mb-4">Basket</h2>
 
