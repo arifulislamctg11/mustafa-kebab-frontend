@@ -1,4 +1,4 @@
-import CardSearch from "../CardSearch/CardSearch";
+
 import datas from '../../../public/homejson.json'
 import { BsExclamationCircle } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
@@ -7,7 +7,7 @@ const CardSection=()=>{
     return(
         <>
         <div className="">
-            <CardSearch></CardSearch>
+            {/* <CardSearch></CardSearch> */}
             {/* Cards */}
             <div className="gird  grid-cols-1 mt-28 lg:px-10  pr-24">
                 {
