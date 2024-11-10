@@ -9,7 +9,7 @@ const CardSection=()=>{
     return(
         <>
         <div className=" ">
-            <CardSearch></CardSearch>
+            {/* <CardSearch></CardSearch> */}
             {/* Cards */}
             <div className="">
                 {
