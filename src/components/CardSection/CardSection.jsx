@@ -11,7 +11,7 @@ const CardSection=()=>{
         <div className=" ">
             {/* <CardSearch></CardSearch> */}
             {/* Cards */}
-            <div className="">
+            {/* <div className="">
                 {
                     datas.map(data => <div key={data.category}>
                          <div>
@@ -40,7 +40,7 @@ const CardSection=()=>{
                          </div>
                     </div>)
                 }
-            </div>
+            </div> */}
         </div>
         </>
     )
