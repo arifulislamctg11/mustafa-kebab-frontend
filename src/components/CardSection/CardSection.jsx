@@ -1,11 +1,16 @@
 
-import datas from '../../../public/homejson.json'
+
 import { BsExclamationCircle } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
 import CategorySlide from '../CategorySlide/CategorySlide';
 import CardSearch from '../CardSearch/CardSearch';
+import { useQuery } from "@tanstack/react-query";
 const CardSection=()=>{
-    console.log(datas)
+  // const {data:cardData}=useQuery({
+  //   queryKey:['cardMenu'],
+  //   queryFn:()=>
+  // }) 
+
     return(
         <>
         <div className=" ">
