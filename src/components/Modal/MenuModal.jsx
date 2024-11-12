@@ -22,6 +22,8 @@ import { LuBadgePercent } from "react-icons/lu";
 import SignIn from '../../pages/Authontaction/SignIn';
 import SignUp from '../../pages/Authontaction/SignUp';
 import { GrPrevious } from "react-icons/gr";
+import { MdCancel } from "react-icons/md";
+
 const MenuModal = ({ closeModal, isOpen }) => {
     const [activeComponent, setActiveComponent] = useState('initial');
 
@@ -62,36 +64,39 @@ const MenuModal = ({ closeModal, isOpen }) => {
                             leaveTo='opacity-0 scale-95'
                         >
                             <DialogPanel className='w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all'>
-
-
-                                <DialogTitle as='h3' className='text-lg font-medium text-center leading-6 text-gray-900'>
+                                <DialogTitle as='h3' className='text-lg font-medium text-center leading-6 text-gray-900 relative'>
                                     {activeComponent !== 'initial' && (
                                         <button
                                             onClick={handlePreviousClick}
-                                            className="text-gray-500 underline absolute top-6 left-3 text-3xl hover:bg-gray-100 p-1 rounded-md"
+                                            className="text-gray-500 underline absolute top-0 left-0 text-3xl hover:bg-gray-100 p-1 rounded-md"
                                         >
                                             <GrPrevious />
                                         </button>
                                     )}
-                                    <h3 className="font-bold text-xl text-black">My account</h3>
 
+                                    <button
+                                        onClick={closeModal}
+                                        className="absolute top-0 right-0 text-3xl text-gray-500 hover:bg-gray-100 p-1 rounded-md"
+                                    >
+                                        <MdCancel />
+                                    </button>
+
+                                    <h3 className="font-bold text-xl text-black">My account</h3>
 
                                     <div className="text-xl font-semibold flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 lg:gap-8 mt-5">
                                         <button
                                             onClick={handleSignInClick}
-                                            className={`w-full sm:w-auto py-2  sm:px-8 sm:py-2 md:px-10 md:py-2  rounded-full ${activeComponent === 'SignIn' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
+                                            className={`w-full sm:w-auto py-2 sm:px-8 sm:py-2 md:px-10 md:py-2 rounded-full ${activeComponent === 'SignIn' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
                                         >
                                             Sign in
                                         </button>
                                         <button
                                             onClick={handleSignUpClick}
-                                            className={`w-full sm:w-auto  py-2 sm:px-8 sm:py-2 md:px-10 md:py-2  rounded-full ${activeComponent === 'SignUp' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
+                                            className={`w-full sm:w-auto py-2 sm:px-8 sm:py-2 md:px-10 md:py-2 rounded-full ${activeComponent === 'SignUp' ? 'bg-orange-600 text-white' : 'bg-slate-200 text-black'}`}
                                         >
                                             Create account
                                         </button>
                                     </div>
-
-
                                 </DialogTitle>
 
                                 <div className="mt-7">
@@ -119,7 +124,6 @@ const MenuModal = ({ closeModal, isOpen }) => {
                                                     <span className="text-xl">StampCards</span>
                                                 </NavLink>
                                             </li>
-
                                         </ul>
                                     )}
                                 </div>
@@ -130,7 +134,7 @@ const MenuModal = ({ closeModal, isOpen }) => {
             </Dialog>
         </Transition>
     );
-}
+};
 
 MenuModal.propTypes = {
     closeModal: PropTypes.func.isRequired,

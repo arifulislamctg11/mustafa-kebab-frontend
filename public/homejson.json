@@ -1,368 +1,191 @@
 [
-      {
-        "category": "Top Picks",
-        "items": [
-          {
-            "id": 101,
-            "title": "Rollo standardowy [średni]",
-            "price": 25,
-            "image": "https://example.com/images/rollo-standardowy.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Ser", "price": 5 },
-                { "title": "Bekon", "price": 6 },
-                { "title": "Jalapeno", "price": 4 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Ostry (Spicy)", "price": 2 },
-                { "title": "Ziołowy (Herb)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Indyk (Turkey)", "price": 3 },
-                { "title": "Wołowina (Beef)", "price": 4 }
-              ],
-              "napoje": [
-                { "title": "Woda mineralna", "price": 4, "ml": 500 },
-                { "title": "Cola", "price": 6, "ml": 500 },
-                { "title": "Sok pomarańczowy", "price": 7, "ml": 300 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 102,
-            "title": "Rollo z łososiem",
-            "price": 32,
-            "image": "https://example.com/images/rollo-losos.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Awokado", "price": 6 },
-                { "title": "Jalapeno", "price": 4 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Cytrynowy", "price": 3 }
-              ],
-              "mięso": [
-                { "title": "Łosoś (Salmon)", "price": 0 }
-              ],
-              "napoje": [
-                { "title": "Sok pomarańczowy", "price": 7, "ml": 300 },
-                { "title": "Woda gazowana", "price": 5, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "category": "Plate Kebab",
-        "items": [
-          {
-            "id": 201,
-            "title": "Rollo XL",
-            "price": 30,
-            "image": "https://example.com/images/rollo-xl.jpg",
-            "menu": {
-              "ingredients":"mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Ser", "price": 5 },
-                { "title": "Bekon", "price": 6 },
-                { "title": "Pieczarki", "price": 5 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "BBQ", "price": 3 },
-                { "title": "Majonez", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Baranina (Lamb)", "price": 5 },
-                { "title": "Indyk (Turkey)", "price": 3 }
-              ],
-              "napoje": [
-                { "title": "Sprite", "price": 6, "ml": 500 },
-                { "title": "Sok jabłkowy", "price": 7, "ml": 300 },
-                { "title": "Fanta", "price": 6, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 202,
-            "title": "Kebab na talerzu",
-            "price": 35,
-            "image": "https://example.com/images/kebab-talerz.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Frytki", "price": 5 },
-                { "title": "Ser feta", "price": 6 }
-              ],
-              "sos": [
-                { "title": "Sos czosnkowy", "price": 2 },
-                { "title": "Sos pikantny", "price": 3 }
-              ],
-              "mięso": [
-                { "title": "Wołowina (Beef)", "price": 4 },
-                { "title": "Kurczak (Chicken)", "price": 0 }
-              ],
-              "napoje": [
-                { "title": "Woda mineralna", "price": 4, "ml": 500 },
-                { "title": "Cola", "price": 6, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "category": "Kebab Set",
-        "items": [
-          {
-            "id": 301,
-            "title": "Rollo z serem",
-            "price": 28,
-            "image": "https://example.com/images/rollo-z-serem.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Bekon", "price": 6 },
-                { "title": "Jalapeno", "price": 4 },
-                { "title": "Oliwki", "price": 3 }
-              ],
-              "sos": [
-                { "title": "Ziołowy (Herb)", "price": 2 },
-                { "title": "Tysiąca Wysp", "price": 3 },
-                { "title": "Ostry (Spicy)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Wołowina (Beef)", "price": 4 },
-                { "title": "Indyk (Turkey)", "price": 3 }
-              ],
-              "napoje": [
-                { "title": "Woda gazowana", "price": 5, "ml": 500 },
-                { "title": "Sok wieloowocowy", "price": 8, "ml": 300 },
-                { "title": "Red Bull", "price": 10, "ml": 250 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 302,
-            "title": "Zestaw kebab z frytkami",
-            "price": 38,
-            "image": "https://example.com/images/zestaw-kebab.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Sos czosnkowy", "price": 2 },
-                { "title": "Sos BBQ", "price": 3 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Ostry (Spicy)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Wołowina (Beef)", "price": 4 }
-              ],
-              "napoje": [
-                { "title": "Cola", "price": 6, "ml": 500 },
-                { "title": "Sok jabłkowy", "price": 7, "ml": 300 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      } ,
-      {
-        "category": "Popular",
-        "items": [
-          {
-            "id": 7,
-            "title": "Rollo standardowy [średni]",
-            "price": 25,
-            "image": "https://example.com/images/rollo-standardowy.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Ser", "price": 5 },
-                { "title": "Bekon", "price": 6 },
-                { "title": "Jalapeno", "price": 4 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Ostry (Spicy)", "price": 2 },
-                { "title": "Ziołowy (Herb)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Indyk (Turkey)", "price": 3 },
-                { "title": "Wołowina (Beef)", "price": 4 }
-              ],
-              "napoje": [
-                { "title": "Woda mineralna", "price": 4, "ml": 500 },
-                { "title": "Cola", "price": 6, "ml": 500 },
-                { "title": "Sok pomarańczowy", "price": 7, "ml": 300 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 8,
-            "title": "Rollo z łososiem",
-            "price": 32,
-            "image": "https://example.com/images/rollo-losos.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Awokado", "price": 6 },
-                { "title": "Jalapeno", "price": 4 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Cytrynowy", "price": 3 }
-              ],
-              "mięso": [
-                { "title": "Łosoś (Salmon)", "price": 0 }
-              ],
-              "napoje": [
-                { "title": "Sok pomarańczowy", "price": 7, "ml": 300 },
-                { "title": "Woda gazowana", "price": 5, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "category": "Kabab ",
-        "items": [
-          {
-            "id": 9,
-            "title": "Rollo XL",
-            "price": 30,
-            "image": "https://example.com/images/rollo-xl.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Ser", "price": 5 },
-                { "title": "Bekon", "price": 6 },
-                { "title": "Pieczarki", "price": 5 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "BBQ", "price": 3 },
-                { "title": "Majonez", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Baranina (Lamb)", "price": 5 },
-                { "title": "Indyk (Turkey)", "price": 3 }
-              ],
-              "napoje": [
-                { "title": "Sprite", "price": 6, "ml": 500 },
-                { "title": "Sok jabłkowy", "price": 7, "ml": 300 },
-                { "title": "Fanta", "price": 6, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 10,
-            "title": "Kebab na talerzu",
-            "price": 35,
-            "image": "https://example.com/images/kebab-talerz.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Frytki", "price": 5 },
-                { "title": "Ser feta", "price": 6 }
-              ],
-              "sos": [
-                { "title": "Sos czosnkowy", "price": 2 },
-                { "title": "Sos pikantny", "price": 3 }
-              ],
-              "mięso": [
-                { "title": "Wołowina (Beef)", "price": 4 },
-                { "title": "Kurczak (Chicken)", "price": 0 }
-              ],
-              "napoje": [
-                { "title": "Woda mineralna", "price": 4, "ml": 500 },
-                { "title": "Cola", "price": 6, "ml": 500 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      },
-      {
-        "category": "Soup",
-        "items": [
-          {
-            "id": 11,
-            "title": "Rollo z serem",
-            "price": 28,
-            "image": "https://example.com/images/rollo-z-serem.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Bekon", "price": 6 },
-                { "title": "Jalapeno", "price": 4 },
-                { "title": "Oliwki", "price": 3 }
-              ],
-              "sos": [
-                { "title": "Ziołowy (Herb)", "price": 2 },
-                { "title": "Tysiąca Wysp", "price": 3 },
-                { "title": "Ostry (Spicy)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Wołowina (Beef)", "price": 4 },
-                { "title": "Indyk (Turkey)", "price": 3 }
-              ],
-              "napoje": [
-                { "title": "Woda gazowana", "price": 5, "ml": 500 },
-                { "title": "Sok wieloowocowy", "price": 8, "ml": 300 },
-                { "title": "Red Bull", "price": 10, "ml": 250 }
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "id": 12,
-            "title": "Zestaw kebab z frytkami",
-            "price": 38,
-            "image": "https://example.com/images/zestaw-kebab.jpg",
-            "menu": {
-              "ingredients": "mięso, sos, ogórek, pomidor, sałata lodowa, ser",
-              "dodatki": [
-                { "title": "Sos czosnkowy", "price": 2 },
-                { "title": "Sos BBQ", "price": 3 }
-              ],
-              "sos": [
-                { "title": "Czosnkowy (Garlic)", "price": 2 },
-                { "title": "Ostry (Spicy)", "price": 2 }
-              ],
-              "mięso": [
-                { "title": "Kurczak (Chicken)", "price": 0 },
-                { "title": "Wołowina (Beef)", "price": 4 }
-              ],
-              "napoje": [
-                { "title": "Cola", "price": 6, "ml": 500 },
-                { "title": "Sok jabłkowy", "price": 7, "ml": 300 }
-              ]
-            },
-            "quantity": 1
-          }
-        ]
-      }
-    ]
-      
- 
+  {
+    "itemName": "Margherita Pizza",
+    "description": "Classic margherita pizza with fresh mozzarella, tomatoes, and basil.",
+    "price": 10.99,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-11-10T10:00:00Z",
+    "updatedAt": "2024-11-10T12:00:00Z"
+  },
+  {
+    "itemName": "Caesar Salad",
+    "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+    "price": 8.50,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-11-09T09:00:00Z",
+    "updatedAt": "2024-11-09T11:00:00Z"
+  },
+  {
+    "itemName": "Spaghetti Carbonara",
+    "description": "Classic Italian pasta with creamy sauce, pancetta, and Parmesan.",
+    "price": 13.75,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-11-08T08:00:00Z",
+    "updatedAt": "2024-11-08T10:00:00Z"
+  },
+  {
+    "itemName": "Garlic Bread",
+    "description": "Crispy garlic bread with a hint of butter and herbs.",
+    "price": 4.25,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-11-07T07:00:00Z",
+    "updatedAt": "2024-11-07T09:00:00Z"
+  },
+  {
+    "itemName": "Mango Smoothie",
+    "description": "Refreshing mango smoothie made with fresh mangoes and yogurt.",
+    "price": 5.99,
+    "category": "dessert",
+    "available": true,
+    "createdAt": "2024-11-06T06:00:00Z",
+    "updatedAt": "2024-11-06T08:00:00Z"
+  },
+  {
+    "itemName": "Cheeseburger",
+    "description": "Juicy cheeseburger with lettuce, tomato, and melted cheddar cheese.",
+    "price": 11.49,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-11-05T05:00:00Z",
+    "updatedAt": "2024-11-05T07:00:00Z"
+  },
+  {
+    "itemName": "Chicken Wings",
+    "description": "Spicy chicken wings served with ranch dip.",
+    "price": 9.99,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-11-04T04:00:00Z",
+    "updatedAt": "2024-11-04T06:00:00Z"
+  },
+  {
+    "itemName": "Pancakes",
+    "description": "Fluffy pancakes served with maple syrup and butter.",
+    "price": 7.50,
+    "category": "dessert",
+    "available": true,
+    "createdAt": "2024-11-03T03:00:00Z",
+    "updatedAt": "2024-11-03T05:00:00Z"
+  },
+  {
+    "itemName": "Lobster Bisque",
+    "description": "Creamy lobster bisque with a hint of sherry.",
+    "price": 12.00,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-11-02T02:00:00Z",
+    "updatedAt": "2024-11-02T04:00:00Z"
+  },
+  {
+    "itemName": "Veggie Burger",
+    "description": "Grilled veggie patty with lettuce, tomato, and avocado.",
+    "price": 10.50,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-11-01T01:00:00Z",
+    "updatedAt": "2024-11-01T03:00:00Z"
+  },
+  {
+    "itemName": "Fried Calamari",
+    "description": "Crispy fried calamari served with marinara sauce.",
+    "price": 9.75,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-10-31T23:00:00Z",
+    "updatedAt": "2024-10-31T23:59:59Z"
+  },
+  {
+    "itemName": "Beef Tacos",
+    "description": "Soft tortillas filled with seasoned beef, cheese, and salsa.",
+    "price": 8.99,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-10-30T22:00:00Z",
+    "updatedAt": "2024-10-30T23:00:00Z"
+  },
+  {
+    "itemName": "Chocolate Cake",
+    "description": "Rich chocolate cake topped with creamy chocolate frosting.",
+    "price": 6.75,
+    "category": "dessert",
+    "available": true,
+    "createdAt": "2024-10-29T21:00:00Z",
+    "updatedAt": "2024-10-29T23:00:00Z"
+  },
+  {
+    "itemName": "French Fries",
+    "description": "Crispy French fries served with ketchup.",
+    "price": 3.99,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-10-28T20:00:00Z",
+    "updatedAt": "2024-10-28T22:00:00Z"
+  },
+  {
+    "itemName": "Grilled Salmon",
+    "description": "Grilled salmon with lemon butter sauce and steamed vegetables.",
+    "price": 15.99,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-10-27T19:00:00Z",
+    "updatedAt": "2024-10-27T21:00:00Z"
+  },
+  {
+    "itemName": "Tiramisu",
+    "description": "Classic Italian dessert with layers of coffee-soaked sponge cake and mascarpone cream.",
+    "price": 6.50,
+    "category": "dessert",
+    "available": true,
+    "createdAt": "2024-10-26T18:00:00Z",
+    "updatedAt": "2024-10-26T20:00:00Z"
+  },
+  {
+    "itemName": "Buffalo Wings",
+    "description": "Spicy buffalo wings with blue cheese dressing.",
+    "price": 10.50,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-10-25T17:00:00Z",
+    "updatedAt": "2024-10-25T19:00:00Z"
+  },
+  {
+    "itemName": "Chicken Alfredo",
+    "description": "Creamy Alfredo pasta with grilled chicken and Parmesan.",
+    "price": 13.99,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-10-24T16:00:00Z",
+    "updatedAt": "2024-10-24T18:00:00Z"
+  },
+  {
+    "itemName": "Apple Pie",
+    "description": "Traditional apple pie with cinnamon-spiced filling and a flaky crust.",
+    "price": 5.75,
+    "category": "dessert",
+    "available": true,
+    "createdAt": "2024-10-23T15:00:00Z",
+    "updatedAt": "2024-10-23T17:00:00Z"
+  },
+  {
+    "itemName": "Mozzarella Sticks",
+    "description": "Crispy mozzarella sticks served with marinara sauce.",
+    "price": 6.25,
+    "category": "appetizer",
+    "available": true,
+    "createdAt": "2024-10-22T14:00:00Z",
+    "updatedAt": "2024-10-22T16:00:00Z"
+  },
+  {
+    "itemName": "Chicken Quesadilla",
+    "description": "Grilled chicken quesadilla with cheese and salsa.",
+    "price": 9.25,
+    "category": "main course",
+    "available": true,
+    "createdAt": "2024-10-21T13:00:00Z",
+    "updatedAt": "2024-10-21T15:00:00Z"
+  }
+]

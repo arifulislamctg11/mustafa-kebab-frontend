@@ -1,20 +1,26 @@
 
-import datas from '../../../public/homejson.json'
+
 import { BsExclamationCircle } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
+import CategorySlide from '../CategorySlide/CategorySlide';
 import CardSearch from '../CardSearch/CardSearch';
+import { useQuery } from "@tanstack/react-query";
 const CardSection=()=>{
-    console.log(datas)
+  // const {data:cardData}=useQuery({
+  //   queryKey:['cardMenu'],
+  //   queryFn:()=>
+  // }) 
+
     return(
         <>
-        <div className="">
-            <CardSearch></CardSearch>
+        <div className=" ">
+            {/* <CardSearch></CardSearch> */}
             {/* Cards */}
-            <div className="gird  grid-cols-1 mt-28 lg:px-10  pr-24">
+            {/* <div className="">
                 {
                     datas.map(data => <div key={data.category}>
                          <div>
-                          <h1 className="font-bold text-xl ml-5">{data.category}</h1>
+                          <h1 className="font-bold text-xl ml-10">{data.category}</h1>
                           <div className="">
                       {
                         data.items.map(da =>    <div key={da.title} className="lg:p-6   lg:py-12 mt-5 lg:mr-72 w-screen lg:w-auto card   mb-5  bg-white border border-gray-300">
@@ -39,7 +45,7 @@ const CardSection=()=>{
                          </div>
                     </div>)
                 }
-            </div>
+            </div> */}
         </div>
         </>
     )

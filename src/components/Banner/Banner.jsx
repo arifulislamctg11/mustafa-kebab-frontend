@@ -4,7 +4,7 @@ import banner from '../../assets/banner.jpg';
 
 const Banner = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen   bg-white">
       {/* Mobile View (default) */}
       <div className="block md:hidden">
         <div className="relative h-[200px] w-full">
@@ -96,9 +96,9 @@ const Banner = () => {
         </div>
 
         {/* Fixed Basket Section for Desktop */}
-        <div className="fixed top-20 right-0 w-[350px] border-l border-gray-200">
+        {/* <div className="fixed top-20 right-0 w-[350px] border-l border-gray-200">
           <Basket />
-        </div>
+        </div> */}
       </div>
     </div>
   );
