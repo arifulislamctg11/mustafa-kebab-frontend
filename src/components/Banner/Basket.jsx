@@ -1,15 +1,20 @@
-import  { useState } from 'react';
+import  {  useState } from 'react';
 import { ShoppingBasket, Truck, MapPin } from 'lucide-react';
+import useGetAllOrdersMenu from '../../hooks/useGetAllOrdersMenu';
 
 const Basket = () => {
+  const {addedCard}=useGetAllOrdersMenu()
   const [selectedOption, setSelectedOption] = useState('delivery'); // Default to 'delivery'
-
+  
+  
+  
   const handleOptionChange = (option) => {
     setSelectedOption(option);
+    
   };
 
   return (
-    <div className="w-[350px] fixed hidden lg:block p-4 right-0 bg-white rounded-lg">
+    <div className="w-[350px] fixed hidden lg:block p-4 right-0 bg-white rounded-l ">
       {/* Heading for small and medium devices */}
       <h2 className="hidden lg:flex justify-center text-xl font-bold mb-4">Basket</h2>
 
@@ -41,11 +46,23 @@ const Basket = () => {
       </div>
 
       {/* Full Basket Content for Medium and Larger Devices */}
-      <div className="hidden md:flex flex-col items-center justify-center h-[calc(100vh-180px)]">
+      
+      {
+        addedCard&&addedCard.length>0 ? (<div>
+              {
+                addedCard.map(card => <div key={card._id} className='flex justify-between'>
+                      <h1 className='font-bold text-xl'>{card.itemName}</h1>
+                      <p>{card.price}</p>
+                </div>)
+              }
+        </div>) : (
+          <div className="hidden md:flex flex-col items-center justify-center h-[calc(100vh-180px)]">
         <ShoppingBasket className="h-16 w-16 text-gray-300 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Fill your basket</h3>
         <p className="text-gray-400">Your basket is empty</p>
       </div>
+        )
+      }
 
       {/* Toggle between Delivery and Pickup content (only visible on larger devices) */}
       <div className="hidden sm:block lg:flex flex-col items-center justify-center mt-4">

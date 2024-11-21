@@ -1,17 +1,20 @@
 import { BsExclamationCircle } from "react-icons/bs";
 import { FaPlus } from "react-icons/fa";
-import CardSearch from '../CardSearch/CardSearch';
-import CategorySlide from '../CategorySlide/CategorySlide'; // Assuming this import is required
+import CardSearch from '../CardSearch/CardSearch';// Assuming this import is required
 import { useQuery } from "@tanstack/react-query";
 import usePublic from "../../hooks/usePublic";
-import { IdCard } from "lucide-react";
+
 import usePrivate from "../../hooks/usePrivate";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import useGetAllOrdersMenu from "../../hooks/useGetAllOrdersMenu";
 
 const CardSection = () => {
   const axiosPublic=usePublic()
   const axiosPrivate=usePrivate()
-  // Uncomment and complete the useQuery function if needed
-  const { data: cardDataMenu } = useQuery({
+  const {refetch}=useGetAllOrdersMenu()
+  // card menu data
+  const { data: cardDataMenu} = useQuery({
     queryKey: ['cardMenu'],
     queryFn: async() =>{
       const cardData=await axiosPublic.get('/menu')
@@ -21,6 +24,7 @@ const CardSection = () => {
     }      
   });
 
+  // added Card Button and post added card data
   const handleCard=async(da)=>{
      const orderMenu={
       itemName:da.itemName,
@@ -32,9 +36,10 @@ const CardSection = () => {
      }
      const menuOrder=await axiosPrivate.post('/ordersMenu',orderMenu)
      console.log(menuOrder.data)
-    //  if(menuOrder.data.insertedId){
-      
-    //  }
+     if(menuOrder?.data?.insertedId){
+       refetch()
+       toast(`${da.itemName} is added`)
+     }
      
   }
 
@@ -68,9 +73,9 @@ const CardSection = () => {
                 ))}
               </div>
             
-       
         </div>
       </div>
+              <ToastContainer />
     </>
   );
 };
