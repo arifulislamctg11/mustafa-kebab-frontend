@@ -5,12 +5,8 @@ import useGetAllOrdersMenu from '../../hooks/useGetAllOrdersMenu';
 const Basket = () => {
   const {addedCard}=useGetAllOrdersMenu()
   const [selectedOption, setSelectedOption] = useState('delivery'); // Default to 'delivery'
-  
-  
-  
   const handleOptionChange = (option) => {
     setSelectedOption(option);
-    
   };
 
   return (

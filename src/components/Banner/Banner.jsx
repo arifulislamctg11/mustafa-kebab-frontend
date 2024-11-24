@@ -4,14 +4,14 @@ import banner from '../../assets/banner.jpg';
 
 const Banner = () => {
   return (
-    <div className="min-h-screen   bg-white">
+    <div className="bg-white">
       {/* Mobile View (default) */}
       <div className="block md:hidden">
         <div className="relative h-[200px] w-full">
           <img
             src={banner}
             alt="Kebab on wooden board"
-            className="w-full h-full object-cover"
+            className=" h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 bg-white rounded-lg p-2">
             <img

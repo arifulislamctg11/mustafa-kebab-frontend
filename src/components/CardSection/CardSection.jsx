@@ -40,14 +40,13 @@ const CardSection = () => {
        refetch()
        toast(`${da.itemName} is added`)
      }
-     
   }
 
   return (
     <>
-      <div className="">
+      <div>
         <CardSearch />
-        <div className="mt-20 ">
+        <div className="mt-20">
               <div className="">
                 {cardDataMenu?.map(da => (
                    <div key={da._id}>
