@@ -3,7 +3,7 @@ import CardSection from "../CardSection/CardSection";
 
 const Secation =()=>{
     return(
-        <div className=" container">
+        <div className="container">
          <Banner></Banner>
          <CardSection></CardSection>
         </div>

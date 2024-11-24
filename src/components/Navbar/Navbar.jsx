@@ -18,12 +18,12 @@ const Navabr = () => {
           <div className="dropdown">
 
           </div>
-          <Link to='/' className=" text-orange-500 text-xl flex "><MdOutlineKeyboardArrowLeft className="mt-2 text-2xl" /><RiRestaurantFill className="mt-2 text-2xl" /><span className="font-bold text-2xl">Mustofa</span>kebab</Link>
+          <Link to='/' className=" text-orange-500 text-xl flex "><MdOutlineKeyboardArrowLeft className="mt-2 text-2xl" /><RiRestaurantFill className="mt-2 text-2xl" /><span className="font-bold text-2xl"> Mustafa kebab </span> </Link>
         </div>
         {/* Menu */}
         <div className="navbar-center  lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li className="text-black font-semibold lg:flex hidden">Menu</li>
+            <li className="text-black font-semibold lg:flex hidden"> Menu</li>
 
           </ul>
         </div>

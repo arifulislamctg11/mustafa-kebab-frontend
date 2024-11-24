@@ -1,6 +1,8 @@
 import { Info, Heart } from 'lucide-react';
 import Basket from './Basket';
 import banner from '../../assets/banner.jpg';
+import { FaPhone } from "react-icons/fa6";
+
 
 const Banner = () => {
   return (
@@ -32,8 +34,9 @@ const Banner = () => {
                 <span className="text-gray-500 ml-1">(53)</span>
               </div>
               <p className="text-sm text-gray-500 mt-1">
-                Do cen dań doliczono koszt opakowania w wysokości 1 zł.
+              Kazimierza Wielkiego 24 , Przemyśl , Postcode: 37-700
               </p>
+              <FaPhone />
             </div>
             <div className="flex gap-2">
               <button className="p-2 rounded-full border border-gray-300">
@@ -78,9 +81,10 @@ const Banner = () => {
                   <span className="text-orange-500">★</span>
                   <span className="font-semibold ml-1">4.1</span>
                   <span className="text-gray-500 ml-1">(53)</span>
+                 <div className='ml-2'> <a href="tel:+729 204 345"></a><FaPhone /></div>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">
-                  Do cen dań doliczono koszt opakowania w wysokości 1 zł.
+                Kazimierza Wielkiego 24 , Przemyśl , Postcode: 37-700
                 </p>
               </div>
               <div className="flex gap-2">

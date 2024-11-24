@@ -1,3 +1,4 @@
+import { FaPhone } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -21,7 +22,8 @@ const Footer = () => {
                 <p> 
                      Kazimierza Wielkiego 24 , Przemyśl  ,
                      Postcode: 37-700</p>
-                <p>Phone : 729 204 345</p>
+                <p>Phone : 729 204 345</p> 
+                <div className='ml-2'> <a href="tel:+729 204 345"></a><FaPhone /></div>
             </nav>
         </footer>
     );
